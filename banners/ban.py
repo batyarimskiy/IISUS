@@ -2,7 +2,7 @@ import os, sys
 
 from termcolor import colored
 
-banner = colored("""                                                       Ctrl + Z (Стоп)
+banner = colored("""                                     Ctrl + Z (Стоп)
 
 	 ██▓    ██▓  ██████  █    ██   ██████ 
 	▓██▒   ▓██▒▒██    ▒  ██  ▓██▒▒██    ▒ 
