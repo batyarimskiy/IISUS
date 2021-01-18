@@ -1,40 +1,37 @@
 import requests, random, datetime, sys, time, os
 
-from colorama import Fore, Back, Style
 from termcolor import colored
-from banners import ban
+from modules import logo
 
 def russia():
-    os.system("python3 bombRU.py")
-
-def ukraine():
-    print(ban.ukraine)
-    input()
-    main()
+    os.system("cd bombers && python3 bomber.py")
 
 def batya():
-    print(ban.batya)
+    print(logo.batya)
     input()
     main()
+
+def update():
+    os.system("cd modules && python3 update.py")
 
 def exit():
     os.system("clear")
-    print('Прощай! Надеюсь я тебе больше не нужен...')
+    print('Прощай! Надеюсь я тебе больше не нужен...)')
     sys.exit()
 
 def main():
     os.system('clear')
-    print(ban.banner)
-    print(ban.menu)
-    num_menu = input("<0~ ")
+    print(logo.banner)
+    print(logo.menu)
+    num_menu = input("iisus> ")
     if num_menu == "":
        main()
     if num_menu == "1":
         russia()
     if num_menu == "2":
-        ukraine()
-    if num_menu == "3":
         batya()
+    if num_menu == "3":
+        update()
     if num_menu == "4":
         exit()
 main()
